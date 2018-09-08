@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title> Event Details </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- For favicon -->
+<!-- NOTE: I thought of having a different favicon for each club, so that may be implemented in the future -->
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!-- Stylesheets for nav bar -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- For the rest of the site -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<link type="text/css" href="style.css" rel="stylesheet">
+
+</head>
+<body class="my-container">
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a href="./main.html" class="w3-bar-item  w3-hide-small ">Home</a>
+    <a href="./testb.html" class="w3-bar-item  w3-hide-small">About</a>
+    <a href="./testc.html" class="w3-bar-item  w3-hide-small ">Department</a>
+    <a href="./testd.html" class="w3-bar-item  w3-hide-small ">Internships</a>
+    <a href="./teste.html" class="w3-bar-item  w3-hide-small ">Jobs</a>
+    <a href="./testf.html" class="w3-bar-item  w3-hide-small ">Clubs</a>
+<a href="./testg.html" class="w3-bar-item  w3-hide-small ">Join us!</a>
+      </div>
+</div>
+<br>
+<br>
+<h1> Welcome, Mag.com ! </h1>
+<h3> Place details about your event here: </h3>
+<form action="/action_page.php" method="post">
+<table style="width:50%" class="center">
+  <tr>
+    <td>Title :</td>
+    <td><input type="text" name="Title" required ></td>
+  </tr>
+  <tr>
+    <td>Date of event :</td>
+    <td><input type="date" id="datePickerId" required /></td>
+  </tr>
+  <tr>
+    <td>Time :</td>
+    <td><input type="time" name="event-time" min="6:00" max="21:00" required />
+   </td>
+  </tr>
+
+</table>
+  <br>
+  <span class="hours">Event hours: 6AM to 9PM due to intime restrictions</span>
+   <br>
+  <br>
+  Event description :
+  <br><br>
+  <textarea rows="5
+ " cols="50" maxlength="50" required>
+ NOTE: Maximum length for a post is 50 characters.
+ </textarea>
+ <br>
+  <input type="submit" value="Submit" class="button">
+</form>
+</body>
+<!-- Footer -->
+<footer>
+    <div class="w3-container w3-padding-32" id="footer">
+      <h4>Copyright : &copy; VNIT Nagpur,2018</h4>
+    </div>
+</footer>
+</html>
